@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Silkscreen&display=swap" rel="stylesheet">
+    <title>Nino</title>
+</head>
+<body>
+    <div class="cards">
+        <div class="card">
+            <p>
+                <p  class="name">Nakano</p>
+                <p  class="name">Nino</p><br><br><br><br>
+            </p>
+            <p>
+                <label for="" class="label" style="font-weight: bold;">Username</label>
+                <input type="text" class="input" id="user">
+            </p><br>
+            <p>
+                <label for="" class="label" style="font-weight: bold;">Password</label>
+                <input type="password" class="input" id="pw">
+            </p><br>
+            <p>
+                <input type="button" class="btn" value="Login" onclick="Login()">
+                <input type="button" class="btn" value="Exit">
+            </p>
+        </div>
+    </div>
+    <script>
+        function Login(){
+            let user = document.getElementById("user").value;
+            let pw = document.getElementById("pw").value;
+
+            if(user == "" || pw == ""){
+                alert("Data tidak boleh kosong");
+            }else{
+                if(user == "Damar" && pw == "Nino"){
+                    alert("Berhasil Login");
+                }else{
+                    alert("Gagal Login");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

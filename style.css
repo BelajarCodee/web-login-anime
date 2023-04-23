@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: #36202d;
+}
+
+.cards{
+    height: 100vh;
+    width: 400px;
+    background-size: cover;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-image: url(./nino.jpeg);
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.card{
+    height: 80vh;
+    width: 320px;
+    background-image: url(./nino.jpeg);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    color: black;
+    font-style: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border: 2px solid white;
+}
+
+.label{
+    font-family: 'Bruno Ace SC', serif;
+    font-size: 16px;
+}
+
+.input{
+    background-color: rgba(255, 0, 0, 0);
+    border: none;
+    font-size: 16px;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.input:focus{
+    background-color: rgba(231, 104, 115, 0.2);
+    outline: none;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.btn{
+    background-color:  rgba(231, 104, 115, 1)  ;
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.btn:active{
+    scale: 0.9;
+}
+
+.name{
+    font-size: 40px;
+    color:#e76873;
+    font-family: "Helvetica Neue", sans-serif;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #f0747f, 0 0 20px #f0747f, 0 0 25px #f0747f, 0 0 30px #f0747f;
+}
